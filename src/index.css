@@ -1,57 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* Professional Academic Portfolio Design System */
 @layer base {
   :root {
+    /* Professional Color Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 47% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 47% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 47% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep Navy Primary */
+    --primary: 220 47% 17%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 220 30% 25%;
+    --primary-dark: 220 65% 12%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Elegant Teal Accent */
+    --accent: 188 80% 35%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 188 60% 45%;
+    --accent-muted: 188 30% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Sophisticated Grays */
+    --secondary: 220 13% 96%;
+    --secondary-foreground: 220 47% 17%;
+    
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 25% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --subtle: 220 13% 98%;
+    --subtle-foreground: 220 20% 60%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 47% 17%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--subtle)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
+
+    /* Professional Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.08);
+    --shadow-accent: 0 0 40px hsl(var(--accent) / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Sidebar (keeping existing) */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -100,6 +118,133 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Professional Navigation */
+  .nav-link {
+    @apply relative px-4 py-2 text-foreground/80 hover:text-foreground transition-all duration-300;
+    @apply after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0;
+    @apply after:bg-accent after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .nav-link.active {
+    @apply text-accent after:w-full;
+  }
+
+  /* Professional Cards */
+  .professional-card {
+    @apply bg-card border border-border rounded-lg p-6 shadow-sm;
+    @apply hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .accent-card {
+    @apply bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20;
+    @apply hover:from-accent/10 hover:to-accent/20 hover:border-accent/30;
+  }
+
+  /* Typography */
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-playfair leading-tight;
+    @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold font-playfair text-primary mb-8;
+  }
+
+  .subtitle {
+    @apply text-xl font-medium text-muted-foreground;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-primary-foreground;
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-light text-accent-foreground;
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  /* Professional Timeline */
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-border;
+  }
+
+  .timeline-item:before {
+    @apply content-[''] absolute -left-2 top-2 w-4 h-4 rounded-full bg-accent;
+  }
+
+  .timeline-item:last-child {
+    @apply border-l-0;
+  }
+
+  /* Skill Progress Bars */
+  .skill-bar {
+    @apply w-full bg-secondary rounded-full h-3 overflow-hidden;
+  }
+
+  .skill-progress {
+    @apply h-full bg-gradient-to-r from-accent to-accent-light rounded-full;
+    @apply transition-all duration-1000 ease-out;
+  }
+
+  /* Animations */
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-up {
+    @apply animate-slide-up;
+  }
+
+  /* Professional Gradients */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+}
+
+@layer utilities {
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-elegant {
+    transition: var(--transition-elegant);
   }
 }
