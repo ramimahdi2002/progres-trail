@@ -14,9 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        inter: ['Inter', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        heading: ['Space Grotesk', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -3,45 +3,59 @@ import { GraduationCap, Building, Users, Trophy } from 'lucide-react';
 const About = () => {
   const timeline = [
     {
-      year: "2024",
-      title: "M2 Research Program",
-      subtitle: "Telecom Networks & Security",
-      description: "Currently pursuing advanced research in telecommunications security and network infrastructure optimization.",
+      year: "2025-2026",
+      title: "M2 Research in Telecom, Networks and Security",
+      subtitle: "Partnership between Saint Joseph University of Beirut (USJ) and Lebanese University – Faculty of Engineering",
+      description: "Currently pursuing advanced research program focusing on telecommunications, network security, and emerging technologies in partnership between two leading Lebanese universities.",
       type: "current"
     },
     {
-      year: "2022",
-      title: "Senior Networking Specialist",
-      subtitle: "Leading Banking Institution",
-      description: "Architecting enterprise network solutions and implementing security protocols for critical financial systems.",
+      year: "2024",
+      title: "Data Management Specialist",
+      subtitle: "Dorsch Impact GmbH",
+      description: "Conducted data cleaning, analysis, and visualization for development projects. Supported field teams with dashboards, collection tools, and structured reporting.",
+      type: "current"
+    },
+    {
+      year: "2023",
+      title: "University Instructor",
+      subtitle: "Lebanese University, Faculty Of Technology",
+      description: "Teaching hands-on courses in networking, Linux, and programming fundamentals. Leading lab sessions and student mentorship for graduation projects.",
+      type: "current"
+    },
+    {
+      year: "2023",
+      title: "University Lecturer",
+      subtitle: "MUC UNIVERSITY",
+      description: "Lectured in computer engineering and IT fundamentals. Delivered coursework integrated with real-world case studies.",
       type: "professional"
     },
     {
-      year: "2020",
-      title: "MSc Business Administration",
-      subtitle: "Strategic Leadership Focus",
+      year: "2021-2023",
+      title: "MBA – General Business Administration",
+      subtitle: "Lebanese International University",
       description: "Integrated technical expertise with business strategy, focusing on technology management and organizational leadership.",
       type: "education"
     },
     {
-      year: "2018",
-      title: "MSc Computer Engineering",
-      subtitle: "Network Systems Specialization", 
-      description: "Advanced study in network architecture, security protocols, and distributed systems engineering.",
+      year: "2018-2021",
+      title: "MS in Communication & Computer Engineering (MCCE)",
+      subtitle: "Lebanese International University",
+      description: "Advanced study in communication systems, computer engineering, and network technologies with emphasis on practical applications.",
       type: "education"
     },
     {
-      year: "2016",
-      title: "University Lecturer",
-      subtitle: "Computer Engineering Department",
-      description: "Teaching undergraduate courses in networking fundamentals and computer systems architecture.",
-      type: "professional"
+      year: "2019",
+      title: "Network and Telecom Administrator",
+      subtitle: "BBAC Bank",
+      description: "Managing Cisco-based voice and data networks, including CUCM and UCCX. Monitoring network performance using PRTG and resolving service disruptions.",
+      type: "current"
     },
     {
-      year: "2014",
-      title: "BSc Computer Engineering",
-      subtitle: "Summa Cum Laude",
-      description: "Foundation in computer systems, programming, and engineering principles with honors distinction.",
+      year: "2014-2017",
+      title: "BS in Communication & Computer Networks Engineering (CCNE)",
+      subtitle: "Lebanese University, Faculty Of Technology",
+      description: "Foundation in computer systems, networking, and engineering principles with focus on communication and computer networks.",
       type: "education"
     }
   ];
@@ -66,18 +80,19 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="leading-relaxed">
-                  With over 15 years of experience spanning academic research and industry practice, 
-                  I specialize in bridging the gap between cutting-edge research and real-world applications 
-                  in networking and telecommunications security.
+                  Network and Telecom Engineer with over 6 years of experience in enterprise infrastructure, 
+                  unified communications, and academic instruction. Proven expertise in Cisco Unified Communications, 
+                  network design, IP telephony, and data systems.
                 </p>
                 <p className="leading-relaxed">
-                  My unique background combines deep technical expertise in computer engineering with 
-                  strategic business acumen, enabling me to lead complex technology initiatives while 
+                  My unique background combines deep technical expertise in network engineering with 
+                  strategic business acumen, enabling me to bridge IT with strategic goals while 
                   maintaining focus on organizational objectives and stakeholder value.
                 </p>
                 <p className="leading-relaxed">
-                  Currently pursuing advanced research in telecommunications security, I remain committed 
-                  to contributing meaningful innovations to both academic knowledge and industry practice.
+                  Dedicated university instructor with a passion for mentoring and bridging IT with strategic goals. 
+                  Currently serving as both a network administrator and academic instructor, contributing to both 
+                  industry practice and educational excellence.
                 </p>
               </div>
             </div>
@@ -90,18 +105,18 @@ const About = () => {
               </div>
               <div className="professional-card text-center">
                 <Building className="h-8 w-8 text-accent mx-auto mb-3" />
-                <h3 className="font-medium text-primary mb-2">Industry Leadership</h3>
-                <p className="text-sm text-muted-foreground">Senior roles in banking and technology sectors</p>
+                <h3 className="font-medium text-primary mb-2">Network Administration</h3>
+                <p className="text-sm text-muted-foreground">Cisco Unified Communications and enterprise infrastructure</p>
               </div>
               <div className="professional-card text-center">
                 <Users className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-medium text-primary mb-2">Teaching & Mentoring</h3>
-                <p className="text-sm text-muted-foreground">University lecturer and research supervisor</p>
+                <p className="text-sm text-muted-foreground">University instructor and student mentor</p>
               </div>
               <div className="professional-card text-center">
                 <Trophy className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-medium text-primary mb-2">Research Impact</h3>
-                <p className="text-sm text-muted-foreground">Published researcher in network security</p>
+                <p className="text-sm text-muted-foreground">Published researcher in copy-move forgery detection</p>
               </div>
             </div>
           </div>

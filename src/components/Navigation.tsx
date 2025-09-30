@@ -25,7 +25,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="text-xl font-playfair font-semibold text-primary">
-            Dr. Sarah Johnson
+            Taghreed H. Hamzeh
           </Link>
 
           {/* Desktop Navigation */}

@@ -3,123 +3,121 @@ import { GraduationCap, Award, BookOpen, Users, Calendar, MapPin } from 'lucide-
 const Education = () => {
   const education = [
     {
-      degree: "M2 Research Program",
-      field: "Telecommunications Networks & Security",
-      institution: "École Supérieure d'Électricité (Supélec)",
-      location: "Paris, France",
-      period: "2024 - Present",
+      degree: "M2 Research in Telecom, Networks and Security",
+      field: "Telecommunications, Networks and Security",
+      institution: "Partnership between Saint Joseph University of Beirut (USJ) and Lebanese University – Faculty of Engineering",
+      location: "Lebanon",
+      period: "2025 – 2026",
       status: "In Progress",
-      gpa: "Current: 3.9/4.0",
-      description: "Advanced research program focusing on next-generation telecommunications security, 5G/6G network optimization, and machine learning applications in network management.",
+      gpa: "Current",
+      description: "Advanced research program focusing on telecommunications, network security, and emerging technologies in partnership between two leading Lebanese universities.",
       coursework: [
-        "Advanced Network Security Protocols",
-        "5G/6G Network Architecture",
-        "Machine Learning for Networks",
-        "Cryptographic Systems Design",
-        "Research Methodology & Ethics"
+        "Advanced Telecommunications Systems",
+        "Network Security Protocols",
+        "Research Methodology",
+        "Emerging Technologies",
+        "Academic Research",
+        "Thesis Development"
       ],
-      research: "Developing novel security frameworks for 5G network slicing with emphasis on privacy-preserving authentication mechanisms.",
+      research: "Currently pursuing advanced research in telecommunications, networks, and security with focus on practical applications and academic excellence.",
       achievements: [
-        "Research assistantship with full funding",
-        "Presented preliminary findings at IEEE Network Security Conference 2024",
-        "Collaboration with industry partners including Orange and Ericsson"
+        "Enrolled in prestigious partnership program",
+        "Combining theoretical knowledge with practical research",
+        "Building expertise in cutting-edge telecommunications"
       ]
     },
     {
-      degree: "Master of Science",
+      degree: "MBA – General Business Administration",
       field: "Business Administration",
-      institution: "MIT Sloan School of Management",
-      location: "Cambridge, MA",
-      period: "2018 - 2020",
-      status: "Graduated Magna Cum Laude",
-      gpa: "3.8/4.0",
+      institution: "Lebanese International University",
+      location: "Lebanon",
+      period: "2021 - 2023",
+      status: "Graduated",
+      gpa: "Completed",
       description: "Strategic business education with focus on technology management, innovation leadership, and organizational transformation in the digital age.",
       coursework: [
-        "Strategic Technology Management",
-        "Innovation and Entrepreneurship",
+        "Strategic Management",
         "Financial Management",
-        "Operations and Supply Chain Management",
+        "Operations Management",
+        "Marketing Management",
         "Leadership and Organizational Behavior",
-        "Digital Transformation"
+        "Business Strategy"
       ],
-      capstone: "Led team project developing go-to-market strategy for 5G enterprise solutions, resulting in partnership with major telecom provider.",
+      capstone: "Integrated technical expertise with business strategy, focusing on technology management and organizational leadership.",
       achievements: [
-        "Dean's List for 3 consecutive semesters",
-        "MBA Academic Excellence Award",
-        "President, Technology Management Club",
-        "Winner, MIT $100K Business Plan Competition (team category)"
+        "Successfully completed MBA program",
+        "Integrated technical background with business acumen",
+        "Enhanced leadership and management skills"
       ]
     },
     {
-      degree: "Master of Science",
-      field: "Computer Engineering",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      period: "2014 - 2016",
-      status: "Graduated Summa Cum Laude",
-      gpa: "3.95/4.0",
-      description: "Specialized in network systems architecture, distributed computing, and cybersecurity with emphasis on large-scale system design.",
+      degree: "MS in Communication & Computer Engineering (MCCE)",
+      field: "Communication & Computer Engineering",
+      institution: "Lebanese International University",
+      location: "Lebanon",
+      period: "2018 - 2021",
+      status: "Graduated",
+      gpa: "Completed",
+      description: "Advanced study in communication systems, computer engineering, and network technologies with emphasis on practical applications.",
       coursework: [
-        "Advanced Computer Networks",
-        "Distributed Systems",
+        "Advanced Communication Systems",
+        "Computer Networks",
         "Network Security",
-        "Machine Learning Systems",
-        "Computer Systems Architecture",
-        "Cryptography and Security"
+        "Digital Signal Processing",
+        "Computer Architecture",
+        "Telecommunications"
       ],
-      thesis: "Scalable Intrusion Detection for Cloud-Native Architectures: A Machine Learning Approach",
+      thesis: "Advanced studies in communication and computer engineering with focus on network systems and telecommunications.",
       achievements: [
-        "Outstanding Graduate Student Award",
-        "NSF Graduate Research Fellowship",
-        "Published 3 papers in top-tier conferences (SIGCOMM, NDSS, USENIX Security)",
-        "Teaching Assistant for CS244: Advanced Topics in Networking"
+        "Successfully completed Master's program",
+        "Advanced knowledge in communication systems",
+        "Enhanced technical expertise in computer engineering"
       ]
     },
     {
-      degree: "Bachelor of Science",
-      field: "Computer Engineering",
-      institution: "University of California, Berkeley",
-      location: "Berkeley, CA", 
-      period: "2010 - 2014",
-      status: "Graduated Summa Cum Laude",
-      gpa: "3.92/4.0",
-      description: "Comprehensive foundation in computer systems, software engineering, and electrical engineering with focus on networking and communications.",
+      degree: "BS in Communication & Computer Networks Engineering (CCNE)",
+      field: "Communication & Computer Networks Engineering",
+      institution: "Lebanese University (LU), Faculty Of Technology",
+      location: "Lebanon",
+      period: "2014 - 2017",
+      status: "Graduated",
+      gpa: "Completed",
+      description: "Comprehensive foundation in computer systems, networking, and communications engineering with focus on practical applications.",
       coursework: [
         "Computer Networks",
-        "Operating Systems",
+        "Communication Systems",
         "Computer Architecture",
-        "Algorithms and Data Structures",
-        "Digital Signal Processing",
-        "Software Engineering"
+        "Programming Fundamentals",
+        "Network Security",
+        "Telecommunications"
       ],
-      capstone: "Design and implementation of a distributed network monitoring system for campus-wide deployment.",
+      capstone: "Foundation in computer systems, networking, and engineering principles with focus on communication and computer networks.",
       achievements: [
-        "Phi Beta Kappa Honor Society",
-        "Electrical Engineering and Computer Sciences Department Citation",
-        "President, IEEE Student Branch",
-        "Undergraduate Research Opportunity Program (UROP) Scholar"
+        "Successfully completed Bachelor's program",
+        "Strong foundation in networking and communications",
+        "Prepared for advanced studies and professional career"
       ]
     }
   ];
 
   const additionalEducation = [
     {
-      title: "Executive Certificate in Digital Leadership",
-      institution: "Harvard Business School",
-      year: "2021",
-      description: "Intensive program on leading digital transformation initiatives in large organizations."
-    },
-    {
-      title: "Cybersecurity for Critical Infrastructure",
-      institution: "Carnegie Mellon University",
+      title: "Cisco Unified Communications Training",
+      institution: "Cisco Systems",
       year: "2020",
-      description: "Specialized training in protecting critical national infrastructure from cyber threats."
+      description: "Specialized training in Cisco Unified Communications Manager (CUCM) and Cisco Unified Contact Center Express (UCCX)."
     },
     {
-      title: "Advanced Network Security Certification",
-      institution: "SANS Institute",
+      title: "Network Monitoring and PRTG",
+      institution: "Paessler AG",
       year: "2019",
-      description: "Hands-on training in enterprise network security, penetration testing, and incident response."
+      description: "Advanced training in network monitoring, alerting, and performance management using PRTG Network Monitor."
+    },
+    {
+      title: "Data Analysis and Visualization",
+      institution: "Professional Development",
+      year: "2024",
+      description: "Specialized training in data analysis, visualization, and dashboard development for project management and reporting."
     }
   ];
 
@@ -146,22 +144,28 @@ const Education = () => {
                       {edu.degree}
                     </h3>
                     <p className="text-lg font-medium text-accent mb-3">{edu.field}</p>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground mb-4">
+                    
+                    {/* Institution - Full width for long names */}
+                    <div className="mb-3">
+                      <div className="flex items-start gap-2 text-muted-foreground">
+                        <GraduationCap className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                        <span className="font-medium leading-relaxed">{edu.institution}</span>
+                      </div>
+                    </div>
+                    
+                    {/* Location and Date - Separate line with better spacing */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-muted-foreground">
                       <div className="flex items-center gap-2">
-                        <GraduationCap className="h-4 w-4 text-accent" />
-                        <span className="font-medium">{edu.institution}</span>
+                        <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
+                        <span className="font-medium">{edu.location}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-accent" />
-                        <span>{edu.location}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4 text-accent" />
-                        <span>{edu.period}</span>
+                        <Calendar className="h-4 w-4 text-accent flex-shrink-0" />
+                        <span className="font-medium">{edu.period}</span>
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-end gap-2">
+                  <div className="flex flex-col items-end gap-2 mt-4 lg:mt-0">
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                       edu.status.includes('Progress') ? 'bg-blue-100 text-blue-800' :
                       edu.status.includes('Magna') || edu.status.includes('Summa') ? 'bg-gold-100 text-gold-800' :
@@ -253,20 +257,20 @@ const Education = () => {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">3.9</div>
-                <div className="font-medium text-primary">Cumulative GPA</div>
-              </div>
-              <div className="text-center">
                 <div className="text-3xl font-bold text-accent mb-2">4</div>
-                <div className="font-medium text-primary">Degrees Earned</div>
+                <div className="font-medium text-primary">Degrees (Including Current)</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">15+</div>
-                <div className="font-medium text-primary">Academic Awards</div>
+                <div className="text-3xl font-bold text-accent mb-2">3</div>
+                <div className="font-medium text-primary">Master's Degrees</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">25+</div>
-                <div className="font-medium text-primary">Research Publications</div>
+                <div className="text-3xl font-bold text-accent mb-2">1</div>
+                <div className="font-medium text-primary">Bachelor's Degree</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-accent mb-2">1</div>
+                <div className="font-medium text-primary">Research Publication</div>
               </div>
             </div>
           </div>

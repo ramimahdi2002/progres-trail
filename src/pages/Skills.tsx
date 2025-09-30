@@ -3,68 +3,74 @@ import { Network, Shield, Database, Code, Users, TrendingUp } from 'lucide-react
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Technical Expertise",
+      title: "Network & Telecom Engineering",
       icon: <Network className="h-6 w-6" />,
       skills: [
-        { name: "Network Architecture", level: 95 },
-        { name: "Cybersecurity", level: 90 },
-        { name: "Telecom Systems", level: 88 },
-        { name: "Data Analysis", level: 85 },
-        { name: "System Administration", level: 82 },
-        { name: "Cloud Infrastructure", level: 80 }
+        "Network Design & Implementation",
+        "Cisco Unified Communications",
+        "IP Telephony and troubleshooting",
+        "LAN/WAN/VLAN Management",
+        "PRTG monitoring & Alerting",
+        "Riverbed WAN Optimization"
       ]
     },
     {
-      title: "Business & Management",
-      icon: <TrendingUp className="h-6 w-6" />,
+      title: "Data Analysis & Systems",
+      icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: "Strategic Planning", level: 92 },
-        { name: "Project Management", level: 90 },
-        { name: "Team Leadership", level: 88 },
-        { name: "Risk Assessment", level: 85 },
-        { name: "Budget Management", level: 80 },
-        { name: "Stakeholder Relations", level: 78 }
+        "Data Analysis & Visualization",
+        "SPSS, Excel, KoboToolbox",
+        "Linux Systems",
+        "Fortigate Firewalls",
+        "System Administration",
+        "Database Management"
       ]
     },
     {
-      title: "Research & Development",
-      icon: <Code className="h-6 w-6" />,
+      title: "Academic & Teaching",
+      icon: <Users className="h-6 w-6" />,
       skills: [
-        { name: "Academic Research", level: 95 },
-        { name: "Technical Writing", level: 90 },
-        { name: "Data Modeling", level: 88 },
-        { name: "Statistical Analysis", level: 85 },
-        { name: "Innovation Management", level: 82 },
-        { name: "Grant Writing", level: 75 }
+        "Academic Teaching & Mentorship",
+        "Lab Session Leadership",
+        "Student Project Supervision",
+        "Curriculum Development",
+        "Technical Writing",
+        "Research Collaboration"
       ]
     }
   ];
 
   const technologies = [
     {
-      category: "Networking & Security",
-      items: ["Cisco Systems", "Fortinet", "Palo Alto", "Juniper", "pfSense", "Wireshark", "Nmap", "OpenVPN"]
+      category: "Networking & Communications",
+      items: ["Cisco Unified Communications", "CUCM", "UCCX", "Jabber", "Nimas recording system", "PRTG", "Riverbed WAN Optimization", "Fortigate Firewalls"]
     },
     {
-      category: "Programming & Development", 
-      items: ["Python", "Java", "C/C++", "JavaScript", "SQL", "MATLAB", "R", "LaTeX"]
+      category: "Data Analysis & Visualization", 
+      items: ["SPSS", "Excel", "KoboToolbox", "Data Analysis", "Data Visualization", "Dashboard Development", "Reporting Tools", "Statistical Analysis"]
     },
     {
-      category: "Cloud & Infrastructure",
-      items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Ansible", "VMware", "Linux"]
+      category: "Systems & Infrastructure",
+      items: ["Linux Systems", "LAN/WAN/VLAN Management", "IP Telephony", "Network Design", "System Administration", "Network Monitoring", "Troubleshooting", "Documentation"]
     },
     {
-      category: "Data & Analytics",
-      items: ["Pandas", "NumPy", "Scikit-learn", "Tableau", "Power BI", "Jupyter", "Apache Spark", "MongoDB"]
+      category: "Academic & Teaching",
+      items: ["Academic Teaching", "Student Mentorship", "Lab Instruction", "Curriculum Development", "Project Supervision", "Technical Writing", "Research Collaboration", "Case Study Development"]
     }
   ];
 
   const certifications = [
-    { name: "CISSP - Certified Information Systems Security Professional", year: "2022" },
-    { name: "CCNP Enterprise - Cisco Certified Network Professional", year: "2021" },
-    { name: "PMP - Project Management Professional", year: "2020" },
-    { name: "AWS Solutions Architect Professional", year: "2020" },
-    { name: "CISM - Certified Information Security Manager", year: "2019" }
+    { name: "Cisco Unified Communications Training", year: "2020" },
+    { name: "PRTG Network Monitor Certification", year: "2019" },
+    { name: "Data Analysis and Visualization", year: "2024" },
+    { name: "Linux System Administration", year: "2018" },
+    { name: "Network Security Fundamentals", year: "2017" }
+  ];
+
+  const languages = [
+    { name: "Arabic", level: "Native" },
+    { name: "English", level: "Proficient" },
+    { name: "French", level: "Basic" }
   ];
 
   return (
@@ -92,19 +98,11 @@ const Skills = () => {
                   </h3>
                 </div>
                 
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-medium text-foreground">{skill.name}</span>
-                        <span className="text-sm text-accent font-medium">{skill.level}%</span>
-                      </div>
-                      <div className="skill-bar">
-                        <div 
-                          className="skill-progress"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                    <div key={skillIndex} className="flex items-center gap-3 p-3 rounded-lg bg-accent/5 hover:bg-accent/10 transition-colors">
+                      <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0"></div>
+                      <span className="font-medium text-foreground">{skill}</span>
                     </div>
                   ))}
                 </div>
@@ -139,7 +137,7 @@ const Skills = () => {
         </section>
 
         {/* Certifications */}
-        <section>
+        <section className="mb-20">
           <h2 className="text-2xl font-playfair font-semibold text-primary mb-12 text-center">
             Professional Certifications
           </h2>
@@ -155,6 +153,24 @@ const Skills = () => {
                     </div>
                     <Shield className="h-5 w-5 text-accent flex-shrink-0 ml-3" />
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Languages */}
+        <section>
+          <h2 className="text-2xl font-playfair font-semibold text-primary mb-12 text-center">
+            Languages
+          </h2>
+          
+          <div className="max-w-2xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6">
+              {languages.map((lang, index) => (
+                <div key={index} className="professional-card text-center">
+                  <h3 className="font-medium text-primary mb-2">{lang.name}</h3>
+                  <span className="text-accent font-medium">{lang.level}</span>
                 </div>
               ))}
             </div>

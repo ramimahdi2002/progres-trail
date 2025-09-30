@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ExternalLink, Github, FileText, Filter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
@@ -12,11 +11,7 @@ const Projects = () => {
       description: "Designed and implemented a comprehensive security framework for a major banking institution, reducing security incidents by 75% while maintaining system performance.",
       technologies: ["Cisco ASA", "Fortinet", "Python", "SIEM", "Zero Trust"],
       year: "2023",
-      status: "Completed",
-      links: {
-        documentation: "#",
-        presentation: "#"
-      }
+      status: "Completed"
     },
     {
       title: "5G Network Optimization Research",
@@ -24,11 +19,7 @@ const Projects = () => {
       description: "Ongoing research project investigating advanced optimization algorithms for 5G network resource allocation and performance enhancement.",
       technologies: ["MATLAB", "Python", "Machine Learning", "5G NR", "Network Simulation"],
       year: "2024",
-      status: "In Progress",
-      links: {
-        paper: "#",
-        github: "#"
-      }
+      status: "In Progress"
     },
     {
       title: "IoT Security Protocol Enhancement",
@@ -36,11 +27,7 @@ const Projects = () => {
       description: "Developed novel authentication protocols for IoT devices in industrial environments, published in top-tier security conference.",
       technologies: ["Cryptography", "IoT", "Blockchain", "Security Protocols"],
       year: "2023",
-      status: "Published",
-      links: {
-        paper: "#",
-        github: "#"
-      }
+      status: "Published"
     },
     {
       title: "Telecom Infrastructure Modernization",
@@ -48,10 +35,7 @@ const Projects = () => {
       description: "Led the migration of legacy telecom systems to modern cloud-native architecture, improving scalability and reducing operational costs by 40%.",
       technologies: ["AWS", "Kubernetes", "Microservices", "DevOps", "Terraform"],
       year: "2022",
-      status: "Completed",
-      links: {
-        case_study: "#"
-      }
+      status: "Completed"
     },
     {
       title: "Network Anomaly Detection System",
@@ -59,12 +43,7 @@ const Projects = () => {
       description: "Machine learning-based system for real-time detection of network anomalies and security threats with 99.2% accuracy rate.",
       technologies: ["Python", "TensorFlow", "Wireshark", "Elasticsearch", "Kibana"],
       year: "2022",
-      status: "Completed",
-      links: {
-        paper: "#",
-        github: "#",
-        demo: "#"
-      }
+      status: "Completed"
     },
     {
       title: "Smart Grid Communication Security",
@@ -72,10 +51,7 @@ const Projects = () => {
       description: "Research collaboration on securing communication protocols in smart grid infrastructure, focusing on privacy-preserving data aggregation.",
       technologies: ["Cryptography", "Smart Grid", "Privacy", "Secure Multiparty Computation"],
       year: "2021",
-      status: "Published",
-      links: {
-        paper: "#"
-      }
+      status: "Published"
     }
   ];
 
@@ -161,33 +137,6 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Links */}
-              <div className="flex flex-wrap gap-3 pt-4 border-t border-border">
-                {project.links.github && (
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <Github className="mr-2 h-3 w-3" />
-                    Code
-                  </Button>
-                )}
-                {project.links.paper && (
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <FileText className="mr-2 h-3 w-3" />
-                    Paper
-                  </Button>
-                )}
-                {project.links.demo && (
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <ExternalLink className="mr-2 h-3 w-3" />
-                    Demo
-                  </Button>
-                )}
-                {project.links.case_study && (
-                  <Button variant="outline" size="sm" className="text-xs">
-                    <FileText className="mr-2 h-3 w-3" />
-                    Case Study
-                  </Button>
-                )}
-              </div>
             </div>
           ))}
         </div>

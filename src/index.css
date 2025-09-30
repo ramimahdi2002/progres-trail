@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -118,11 +118,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    @apply font-heading;
   }
 }
 
@@ -151,12 +151,12 @@
 
   /* Typography */
   .hero-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-playfair leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight;
     @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-semibold font-playfair text-primary mb-8;
+    @apply text-3xl md:text-4xl font-semibold font-heading text-primary mb-8;
   }
 
   .subtitle {

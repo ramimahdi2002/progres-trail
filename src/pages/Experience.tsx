@@ -3,90 +3,79 @@ import { Building, Users, GraduationCap, Award, Calendar, MapPin } from 'lucide-
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Networking Specialist",
-      company: "International Banking Corporation",
-      location: "New York, NY",
-      period: "2022 - Present",
+      title: "Network and Telecom Administrator",
+      company: "BBAC Bank",
+      location: "Beirut, Lebanon",
+      period: "February 2019 – CURRENT",
       type: "Full-time",
-      description: "Lead enterprise network architecture and security initiatives for a Fortune 500 financial institution with global operations.",
+      description: "Manage Cisco-based voice and data networks, including CUCM and UCCX, for a leading banking institution in Lebanon.",
       responsibilities: [
-        "Architect and implement enterprise-scale network infrastructure supporting 50,000+ users across 25 countries",
-        "Design and deploy advanced security protocols, reducing network vulnerabilities by 80%",
-        "Lead cross-functional teams of 15+ engineers in major infrastructure modernization projects",
-        "Manage $2M+ annual network infrastructure budget with consistent cost optimization",
-        "Establish disaster recovery and business continuity protocols meeting regulatory requirements"
+        "Manage Cisco-based voice and data networks, including CUCM and UCCX",
+        "Monitor network performance using PRTG and resolve service disruptions",
+        "Configure and maintain LAN switches, VLANs, and IP Telephony systems",
+        "Collaborate with IT teams to support network projects and documentation"
       ],
       achievements: [
-        "Reduced network downtime from 99.9% to 99.99% uptime",
-        "Implemented zero-trust architecture ahead of industry standards",
-        "Led successful migration to hybrid cloud infrastructure",
-        "Received 'Excellence in Innovation' award 2023"
+        "Maintained high network availability for critical banking operations",
+        "Successfully implemented unified communications solutions",
+        "Improved network monitoring and alerting capabilities",
+        "Enhanced collaboration between IT teams and business units"
       ],
-      technologies: ["Cisco Systems", "Fortinet", "AWS", "Azure", "Python", "Terraform"]
+      technologies: ["Cisco Unified Communications", "CUCM", "UCCX", "PRTG", "IP Telephony", "LAN/WAN", "VLAN"]
     },
     {
-      title: "Data Entry Specialist & Data Analyst",
-      company: "Global Health Initiative NGO",
-      location: "Remote",
-      period: "2020 - Present",
+      title: "Data Management Specialist",
+      company: "Dorsch Impact GmbH",
+      location: "Hybrid",
+      period: "SEPTEMBER 2024 – CURRENT",
       type: "Part-time",
-      description: "Provide data management and analytical support for international health programs serving underserved populations.",
+      description: "Conducted data cleaning, analysis, and visualization for development projects. Supported field teams with dashboards, collection tools, and structured reporting.",
       responsibilities: [
-        "Manage and analyze large-scale health data sets from 15+ developing countries",
-        "Develop automated data processing pipelines reducing manual effort by 70%",
-        "Create comprehensive reports and visualizations for stakeholders and donors",
-        "Ensure data quality and compliance with international privacy regulations",
-        "Train local staff in data collection and management best practices"
+        "Conducted data cleaning, analysis, and visualization for development projects",
+        "Supported field teams with dashboards, collection tools, and structured reporting"
       ],
       achievements: [
-        "Improved data accuracy from 85% to 98% through process optimization",
-        "Designed dashboard system used by 200+ field workers",
-        "Contributed to 3 published research papers on global health metrics"
+        "Improved data quality and reporting efficiency for field teams",
+        "Developed comprehensive dashboards for project monitoring",
+        "Streamlined data collection processes"
       ],
-      technologies: ["Python", "R", "Tableau", "Power BI", "SQL", "Excel"]
+      technologies: ["Data Analysis", "Data Visualization", "Dashboard Development", "Reporting Tools"]
+    },
+    {
+      title: "University Instructor",
+      company: "Lebanese University, Faculty Of Technology",
+      location: "Abey, Mount Lebanon",
+      period: "MARCH 2023 – CURRENT",
+      type: "Part-time",
+      description: "Teach hands-on courses in networking, Linux, and programming fundamentals. Lead lab sessions and student mentorship for graduation projects.",
+      responsibilities: [
+        "Teach hands-on courses in networking, Linux, and programming fundamentals",
+        "Lead lab sessions and student mentorship for graduation projects"
+      ],
+      achievements: [
+        "Successfully mentored students in practical networking applications",
+        "Developed hands-on curriculum for networking and Linux courses",
+        "Guided students through graduation projects in computer engineering"
+      ],
+      technologies: ["Networking", "Linux Systems", "Programming Fundamentals", "Lab Instruction"]
     },
     {
       title: "University Lecturer",
-      company: "State University Computer Engineering Department",
-      location: "Boston, MA",
-      period: "2016 - 2022",
+      company: "MUC UNIVERSITY",
+      location: "Mount Lebanon, Lebanon", 
+      period: "OCTOBER 2023 – JULY 2024",
       type: "Part-time",
-      description: "Taught undergraduate and graduate courses in computer networking, systems architecture, and cybersecurity.",
+      description: "Lectured in computer engineering and IT fundamentals. Delivered coursework integrated with real-world case studies.",
       responsibilities: [
-        "Delivered lectures to 150+ students per semester in networking fundamentals and advanced topics",
-        "Developed curriculum for new cybersecurity concentration program",
-        "Supervised 25+ undergraduate research projects and 8 graduate theses",
-        "Mentored students in career development and graduate school applications",
-        "Collaborated with industry partners on curriculum modernization initiatives"
+        "Lectured in computer engineering and IT fundamentals",
+        "Delivered coursework integrated with real-world case studies"
       ],
       achievements: [
-        "Received 'Outstanding Faculty Award' in 2019 and 2021",
-        "Maintained 4.8/5 student evaluation rating across all courses",
-        "92% of supervised students secured positions at top tech companies or graduate programs",
-        "Co-authored 12 peer-reviewed publications with student collaborators"
+        "Successfully integrated real-world applications into academic curriculum",
+        "Enhanced student understanding of practical computer engineering concepts",
+        "Developed case studies connecting theory with industry practice"
       ],
-      technologies: ["Network Simulation", "MATLAB", "Python", "Packet Tracer", "Wireshark"]
-    },
-    {
-      title: "Network Systems Engineer",
-      company: "TechFlow Solutions",
-      location: "San Francisco, CA", 
-      period: "2014 - 2018",
-      type: "Full-time",
-      description: "Designed and implemented network solutions for mid-market clients across various industries.",
-      responsibilities: [
-        "Designed custom network architectures for 50+ client organizations",
-        "Implemented security solutions including firewalls, VPNs, and intrusion detection systems",
-        "Provided technical consulting on network optimization and modernization projects",
-        "Managed client relationships and technical support for ongoing projects",
-        "Developed standard operating procedures and documentation"
-      ],
-      achievements: [
-        "Achieved 98% client satisfaction rating across all projects",
-        "Reduced average project delivery time by 30% through process improvements",
-        "Generated $1.5M in additional revenue through upselling security services"
-      ],
-      technologies: ["Cisco", "Juniper", "pfSense", "VMware", "Linux", "Windows Server"]
+      technologies: ["Computer Engineering", "IT Fundamentals", "Case Study Development", "Academic Instruction"]
     }
   ];
 
@@ -197,20 +186,20 @@ const Experience = () => {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">15+</div>
+                <div className="text-3xl font-bold text-accent mb-2">6+</div>
                 <div className="font-medium text-primary">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">200+</div>
+                <div className="text-3xl font-bold text-accent mb-2">100+</div>
                 <div className="font-medium text-primary">Students Taught</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">$5M+</div>
-                <div className="font-medium text-primary">Projects Managed</div>
+                <div className="text-3xl font-bold text-accent mb-2">4</div>
+                <div className="font-medium text-primary">Current Roles</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                <div className="font-medium text-primary">Organizations Served</div>
+                <div className="text-3xl font-bold text-accent mb-2">3</div>
+                <div className="font-medium text-primary">Advanced Degrees</div>
               </div>
             </div>
           </div>

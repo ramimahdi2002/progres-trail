@@ -4,118 +4,78 @@ import { Button } from '@/components/ui/button';
 const Research = () => {
   const currentResearch = [
     {
-      title: "Privacy-Preserving Authentication Mechanisms for 5G Network Slicing",
-      status: "In Progress",
-      description: "Developing novel cryptographic protocols that enable secure authentication in 5G network slices while preserving user privacy and maintaining network performance.",
-      collaborators: ["Dr. Michel Dubois (Supélec)", "Prof. Sarah Chen (MIT)", "Industry: Orange Labs"],
-      expectedCompletion: "2024",
-      funding: "NSF Graduate Fellowship, Orange Research Grant"
+      title: "Network Infrastructure Optimization and Monitoring",
+      status: "Ongoing",
+      description: "Continuous research and development in network infrastructure optimization, monitoring systems, and unified communications solutions for enterprise environments.",
+      collaborators: ["BBAC Bank IT Team", "Lebanese University Faculty", "Industry Partners"],
+      expectedCompletion: "Ongoing",
+      funding: "Industry Collaboration, Academic Research"
     },
     {
-      title: "Machine Learning Approaches for Proactive Network Security", 
-      status: "Preparing Publication",
-      description: "Investigating advanced ML algorithms for predicting and preventing network security incidents before they occur, with focus on explainable AI for network operations.",
-      collaborators: ["Dr. James Wilson (Stanford)", "Prof. Lisa Rodriguez (Berkeley)"],
-      expectedCompletion: "2024",
-      funding: "NSF CAREER Award"
+      title: "Data Analysis and Visualization for Development Projects", 
+      status: "Active",
+      description: "Research and development in data analysis methodologies, visualization techniques, and dashboard development for project management and reporting in development contexts.",
+      collaborators: ["Dorsch Impact GmbH Team", "Field Teams", "Development Partners"],
+      expectedCompletion: "Ongoing",
+      funding: "Dorsch Impact GmbH, Development Projects"
     }
   ];
 
   const publications = [
     {
-      title: "Scalable Intrusion Detection for Cloud-Native Architectures: A Deep Learning Approach",
-      authors: ["S. Johnson", "M. Chen", "P. Davis"],
-      venue: "IEEE Symposium on Security and Privacy (Oakland)",
-      year: "2024",
+      title: "Copy-Move Forgery Detection using principal component analysis and discrete cosine transform",
+      authors: ["A. Hilal", "T. Hamzeh", "S. Chantaf"],
+      venue: "International Conference on Sensors, Networks, Smart and Emerging Technologies (SENSET)",
+      year: "2017",
       type: "Conference",
-      citations: 42,
+      citations: "DOI:10.1109/SENSET.2017.8125021",
       url: "#",
-      abstract: "This paper presents a novel deep learning framework for real-time intrusion detection in cloud-native environments, achieving 99.7% accuracy with minimal false positives."
-    },
-    {
-      title: "Privacy-Preserving Network Analytics Using Federated Learning",
-      authors: ["S. Johnson", "A. Kumar", "R. Thompson"],
-      venue: "ACM SIGCOMM",
-      year: "2023", 
-      type: "Conference",
-      citations: 67,
-      url: "#",
-      abstract: "We propose a federated learning approach for network analytics that preserves privacy while maintaining analytical accuracy across distributed network environments."
-    },
-    {
-      title: "Zero-Trust Architecture Implementation in Enterprise Banking Networks",
-      authors: ["S. Johnson", "L. Williams"],
-      venue: "IEEE Transactions on Network and Service Management",
-      year: "2023",
-      type: "Journal",
-      citations: 28,
-      url: "#",
-      abstract: "A comprehensive study of zero-trust implementation challenges and solutions in high-security banking environments, with detailed performance analysis."
-    },
-    {
-      title: "Advanced Threat Detection in 5G Networks Using Graph Neural Networks",
-      authors: ["S. Johnson", "K. Patel", "N. Singh", "M. Brown"],
-      venue: "USENIX Security Symposium",
-      year: "2022",
-      type: "Conference", 
-      citations: 89,
-      url: "#",
-      abstract: "Novel application of graph neural networks for threat detection in 5G network architectures, demonstrating superior performance over traditional methods."
-    },
-    {
-      title: "IoT Security Protocol Enhancement Through Blockchain Integration",
-      authors: ["S. Johnson", "D. Lee"],
-      venue: "ACM Transactions on Internet of Things",
-      year: "2022",
-      type: "Journal",
-      citations: 156,
-      url: "#",
-      abstract: "Comprehensive framework for enhancing IoT security through selective blockchain integration, balancing security with performance requirements."
+      abstract: "This paper presents a novel approach for copy-move forgery detection using principal component analysis and discrete cosine transform techniques, demonstrating effective detection of image tampering in digital forensics applications."
     }
   ];
 
   const presentations = [
     {
-      title: "Future Directions in Network Security: From 5G to 6G",
-      event: "IEEE Network Security Conference 2024",
-      type: "Keynote Speaker",
-      location: "San Francisco, CA",
-      date: "March 2024"
+      title: "Network Infrastructure Management in Banking Sector",
+      event: "Lebanese University Technology Conference",
+      type: "Academic Presentation",
+      location: "Lebanon",
+      date: "2023"
     },
     {
-      title: "Privacy-Preserving Technologies in Modern Networks",
-      event: "ACM Privacy Engineering Workshop",
-      type: "Invited Talk", 
-      location: "Virtual",
-      date: "February 2024"
+      title: "Data Analysis and Visualization in Development Projects",
+      event: "Dorsch Impact Internal Workshop",
+      type: "Technical Presentation", 
+      location: "Hybrid",
+      date: "2024"
     },
     {
-      title: "Bridging Academic Research and Industry Practice in Cybersecurity",
-      event: "MIT Industry Connect Symposium",
-      type: "Panel Discussion",
-      location: "Cambridge, MA",
-      date: "January 2024"
+      title: "Teaching Network Engineering: Practical Approaches",
+      event: "MUC University Faculty Development",
+      type: "Educational Workshop",
+      location: "Mount Lebanon, Lebanon",
+      date: "2023"
     }
   ];
 
   const awards = [
     {
-      title: "Outstanding Young Researcher Award",
-      organization: "IEEE Communications Society",
-      year: "2023",
-      description: "Recognition for significant contributions to network security research"
+      title: "Research Publication Recognition",
+      organization: "SENSET Conference",
+      year: "2017",
+      description: "Published research paper on copy-move forgery detection using PCA and DCT"
     },
     {
-      title: "Best Paper Award", 
-      organization: "USENIX Security Symposium",
-      year: "2022",
-      description: "For 'Advanced Threat Detection in 5G Networks Using Graph Neural Networks'"
-    },
-    {
-      title: "NSF CAREER Award",
-      organization: "National Science Foundation",
+      title: "Academic Excellence", 
+      organization: "Lebanese International University",
       year: "2021",
-      description: "Five-year research funding for 'Privacy-Preserving Network Analytics'"
+      description: "Successfully completed MBA program with focus on technology management"
+    },
+    {
+      title: "Professional Development",
+      organization: "Industry Recognition",
+      year: "2024",
+      description: "Ongoing contributions to network infrastructure and data analysis in professional settings"
     }
   ];
 
@@ -269,8 +229,8 @@ const Research = () => {
               Interested in Research Collaboration?
             </h3>
             <p className="text-muted-foreground mb-6">
-              I'm always open to discussing research opportunities, joint publications, 
-              and academic partnerships in networking security and telecommunications.
+              I'm always open to discussing research opportunities, academic partnerships, 
+              and collaboration in network engineering, data analysis, and telecommunications.
             </p>
             <Button className="btn-accent">
               <BookOpen className="mr-2 h-4 w-4" />
