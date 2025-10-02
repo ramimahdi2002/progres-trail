@@ -52,6 +52,33 @@ const Projects = () => {
       technologies: ["Cryptography", "Smart Grid", "Privacy", "Secure Multiparty Computation"],
       year: "2021",
       status: "Published"
+    },
+    {
+      title: "Online Courses Portfolio",
+      category: "academic",
+      description: "Comprehensive collection of online courses and educational materials showcasing expertise in networking, security, and telecommunications.",
+      technologies: ["Education", "Online Learning", "Course Development"],
+      year: "2024",
+      status: "Active",
+      link: "https://www.studocu.com/row/user/taghreed-hamzeh/18936023"
+    },
+    {
+      title: "Copy-Move Forgery Detection Research",
+      category: "research",
+      description: "Research paper on copy-move forgery detection using principal component analysis and discrete cosine transform, published in IEEE.",
+      technologies: ["Image Processing", "PCA", "DCT", "Digital Forensics", "Pattern Recognition"],
+      year: "2017",
+      status: "Published",
+      link: "https://ieeexplore.ieee.org/document/8125021"
+    },
+    {
+      title: "ResearchGate Profile",
+      category: "research",
+      description: "Academic profile showcasing research publications, collaborations, and professional network in the field of network security and telecommunications.",
+      technologies: ["Academic Networking", "Research Publications", "Professional Collaboration"],
+      year: "2024",
+      status: "Active",
+      link: "https://www.researchgate.net/profile/Taghreed-Hamzeh"
     }
   ];
 
@@ -136,6 +163,23 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
+
+              {/* Project Link */}
+              {project.link && (
+                <div className="mt-4">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
+                  >
+                    <span>View Project</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              )}
 
             </div>
           ))}
